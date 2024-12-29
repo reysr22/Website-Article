@@ -11,28 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="bg-green-100"  >
-    <div class="flex flex-row justify-between px-7 sticky top-0 w-full shadow-md bg-white">
+    <div class="flex flex-row justify-between px-7 sticky top-0 w-full shadow-md bg-white z-50">
       <p class="py-5">Rey Sabio Ramadhan</p>
       <div class="flex flex-row space-x-4 py-5">
-        <a href="">Home</a>
+        <a href="#home">Home</a>
         <a href="#intr">Introduction</a>
         <a href="#imp">Implementation</a>
-        <a href="hst">History</a>
+        <a href="#hst">History</a>
       </div>
     </div>
     <div class="flex flex-col">
-      <div class="bg-contain bg-center h-96 " style="background-image: url('images/header.jpg') "></div>
+      <div id="home" class="bg-contain bg-center h-96 " style="background-image: url('images/header.jpg') "></div>
       <div class="shadow-lg m-[3pc] bg-[#f3faf2] rounded-md">
-            <p class="px-5 text-4xl font-semibold m-6 text-center">The Web</p>
+            <p id="intr" class="px-5 text-4xl font-semibold m-6 text-center pb-3">The Web</p>
             <div class="">
-                <p id="intr" class="text-4xl ml-5">Introduction</p>
+                <p class="text-4xl ml-5">Introduction</p>
                 <p class="mt-10 mx-5">A website is an online space where you can conveniently publish information regarding yourself, your business, or subjects you care about. It's akin to owning a personal area on the internet to display your thoughts and engage with others. Whether you aim to disseminate knowledge, operate an online store, interact with others, acquire new skills, or just enjoy yourself—websites fulfill many functions. To visit a website, users only require a device equipped with a web browser—such as laptops, smartphones, or tablets—along with an internet connection.
                 </p>
             </div>
+            <div id="imp" class="pb-8"></div>
             <div class="flex flex-row space-x-[64px] mt-10 mx-5">
-                <p id="imp" class="text-4xl">Implementation</p>
+                <p class="text-4xl">Implementation</p>
                 <p class="">Website implementation refers to the process of designing, creating, and launching a website to ensure its accessibility on the internet. It consists of several phases, which include:
                     Planning, Developing a framework for the website's layout, inclusive of flowcharts and diagrams.
                     Coding, Composing the programming language for the website.
@@ -59,7 +61,7 @@
                     <img class="mt-5 w-[500px]" src="images/htmlStructure.png" alt="">
                     <div class="flex flex-col mt-5">
                         <p class="text-2xl mx-8 mb-5 ">HTML Stucture</p>
-                        <p class="mx-8">The composition of an HTML document consists of:
+                        <p class="mx-8 ">The composition of an HTML document consists of:
                             DOCTYPE declaration: Initial component of an HTML document, the doctype declaration informs the browser on which XHTML standards to apply.
                             Elements: The fundamental components of a web page, consisting of a start tag, content, and an end tag.
                             Title tag: The title of the web page, that shows up in the browser's title bar or tab.
@@ -75,35 +77,54 @@
                 <div class="flex flex-row mx-5">
                     
                     <div class="flex flex-col mt-5 pt-5">
-                        <p class="text-2xl text-center mx-8 mb-5 ">CSS Stucture</p>
-                        <p class="mx-8 text-center">CSS is applicable for text styling for instance, for altering the color and size of headings and links. It is useful for establishing a layout for example, transforming a single text column into a design featuring a main content section and a sidebar for associated information. It can also be utilized for effects such as animation.</p>
-                        <div class="flex flex-row mx-5">
-                            <img class="mt-5 w-[500px]" src="images/cssStucture.png" alt="">
-                            <img class="mt-5 w-[500px]" src="images/cssStucture3.png" alt="">
+                        <p class="text-2xl text-center mx-8 mb-5">CSS Structure</p>
+                        <p class="mx-8 text-center pb-5">
+                            CSS is applicable for text styling, for instance, for altering the color and size of headings and links. It is useful for establishing a layout, for example, transforming a single text column into a design featuring a main content section and a sidebar for associated information. It can also be utilized for effects such as animation.
+                        </p>
+                        <div class="relative flex flex-row mx-5 justify-center">
+                            <div class="relative group">
+                                <img
+                                    class="mt-5 w-[500px] transition-transform duration-300 group-hover:z-10 group-hover:scale-110"
+                                    src="images/cssStucture.png"
+                                    alt="CSS Structure 1">
+                            </div>
+                            <div class="relative group">
+                                <img
+                                    class="mt-5 w-[500px] h-[444px] transition-transform duration-300 group-hover:z-10 group-hover:scale-110"
+                                    src="images/cssStucture3.png"
+                                    alt="CSS Structure 2">
+                            </div>
                         </div>
-                        
                     </div>
+                    
                 </div>
                 <p class="mt-5 text-3xl text-center">Frameworks</p>
                 <div class="flex flex-col">
                     <div class="flex flex-row justify-evenly">
-                       <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
-                            <img class="" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="">
-                            <p class="text-center">Tailwind CSS</p>
-                            <p class="text-center">Tailwind CSS is a free CSS framework that helps developers create customized user interfaces. It features a utility-first approach with numerous reusable classes, low-level utility combinations, responsive design, easy customization via the tailwind. config. js file, and encourages developers to purge unused styles for optimal performance.</p>
-                       </div>
-                       <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
-                            <img class="h-[134px] w-[164px] mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="">
-                            <p class="text-center">Bootstrap CSS</p>
-                            <p class="text-center">Bootstrap is a complimentary front-end framework designed for quicker and simpler web development. Bootstrap features design templates based on HTML and CSS for typography, forms, buttons, tables, navigation, modals, image carousels, and many more, in addition to optional JavaScript plugins.</p>
-                       </div>
-                       <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
-                            <img class="h-[134px]" src="https://static-00.iconduck.com/assets.00/materializecss-icon-512x262-q6echivp.png" alt="">
-                            <p class="text-center">Materialize CSS</p>
+                        <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
+                            <img class="w-[150px] mx-auto hover:scale-110 transition-transform duration-300" 
+                                src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" 
+                                alt="Tailwind CSS Logo">
+                            <p class="text-center font-bold">Tailwind CSS</p>
+                            <p class="text-center">Tailwind CSS is a free CSS framework that helps developers create customized user interfaces. It features a utility-first approach with numerous reusable classes, low-level utility combinations, responsive design, easy customization via the `tailwind.config.js` file, and encourages developers to purge unused styles for optimal performance.</p>
+                        </div>
+                        <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
+                            <img class="h-[134px] w-[164px] mx-auto hover:scale-110 transition-transform duration-300" 
+                                src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
+                                alt="Bootstrap CSS Logo">
+                            <p class="text-center font-bold">Bootstrap CSS</p>
+                            <p class="text-center">Bootstrap is a complimentary front-end framework designed for quicker and simpler web development. It features design templates based on HTML and CSS for typography, forms, buttons, tables, navigation, modals, image carousels, and many more, in addition to optional JavaScript plugins.</p>
+                        </div>
+                        <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
+                            <img class="h-[134px] mx-auto hover:scale-110 transition-transform duration-300" 
+                                src="https://static-00.iconduck.com/assets.00/materializecss-icon-512x262-q6echivp.png" 
+                                alt="Materialize CSS Logo">
+                            <p class="text-center font-bold">Materialize CSS</p>
                             <p class="text-center">Materialize is the Cloud Operational Data Store that provides the quickness of streaming combined with the simplicity of a data warehouse. By using Materialize, organizations can utilize SQL to modify, distribute, and respond to rapidly changing data.</p>
-                       </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
             <div class=" flex flex-col shadow-lg m-[5pc]  pb-[15px] pt-[15px] pb-[50px] rounded-md">
                 <div class="flex flex-row">
@@ -124,7 +145,6 @@
                                 <p class="mx-8">What is the goal of utilizing JavaScript?
                                     JavaScript (JS) is a multi-platform, object-oriented programming language employed by programmers to render web pages interactive. It enables developers to produce content that updates dynamically, implement animations, create pop-up menus, clickable buttons, manage multimedia, and so forth.</p>
                             </div>
-                              <!-- <video class="mt-5 w-1/2 " type="video/mp4" src="https://freefrontend.com/assets/img/anime-js-examples/navigation-sub-navigation.mp4" autoplay loop></video> -->
                                <img class="w-1/2" src="images/jsexamples.gif" alt="">
                             </div>
                         </div>
@@ -133,35 +153,135 @@
                 <p class="mt-5 text-3xl text-center">Frameworks</p>
                 <div class="flex flex-col">
                     <div class="flex flex-row justify-evenly">
-                       <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
-                            <img class="w-[150px] mx-auto" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="">
-                            <p class="text-center">React js</p>
+                        <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
+                            <img class="w-[150px] mx-auto hover:scale-110 transition-transform duration-300" 
+                                src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" 
+                                alt="React.js Logo">
+                            <p class="text-center font-bold">React js</p>
                             <p class="text-center">A JavaScript library concentrated on the frontend utilizing creating both single-page and multi-page interfaces, stands as one of the most favored programming technologies globally, and the increasing number of companies adopting it demonstrates its strong foothold.</p>
-                       </div>
-                       <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
-                            <img class="w-[150px] mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/768px-Three.js_Icon.svg.png" alt="">
-                            <p class="text-center">Three js</p>
-                            <p class="text-center">Three. js is a JavaScript library and application programming interface (API) that works across different browsers and is utilized to create and render animated 3D computer graphics within a web browser employing WebGL.</p>
-                       </div>
-                       <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
-                            <img class="h-[150px] w-[150px] mx-auto" src="https://cdn.iconscout.com/icon/free/png-256/free-vitejs-icon-download-in-svg-png-gif-file-formats--company-logo-industry-brand-pack-logos-icons-10673461.png" alt="">
-                            <p class="text-center">Vite js</p>
-                            <p class="text-center">lets you set up a development environment for Vue, TezJS, and React frameworks. Additionally, with the use of Vite JS, you can create an exceptionally fast Single-page Application and connect it with other back-ends. Furthermore, it also offers support for Server-side Rendering (SSR).</p>
-                       </div>
+                        </div>
+                        <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
+                            <img class="w-[150px] mx-auto hover:scale-110 transition-transform duration-300" 
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/768px-Three.js_Icon.svg.png" 
+                                alt="Three.js Logo">
+                            <p class="text-center font-bold">Three js</p>
+                            <p class="text-center">Three.js is a JavaScript library and application programming interface (API) that works across different browsers and is utilized to create and render animated 3D computer graphics within a web browser employing WebGL.</p>
+                        </div>
+                        <div class="flex flex-col space-y-4 mt-5 w-[250px] shadow-lg p-5 rounded-md">
+                            <img class="h-[150px] w-[150px] mx-auto hover:scale-110 transition-transform duration-300" 
+                                src="https://cdn.iconscout.com/icon/free/png-256/free-vitejs-icon-download-in-svg-png-gif-file-formats--company-logo-industry-brand-pack-logos-icons-10673461.png" 
+                                alt="Vite.js Logo">
+                            <p class="text-center font-bold">Vite js</p>
+                            <p class="text-center">Lets you set up a development environment for Vue, TezJS, and React frameworks. Additionally, with the use of Vite JS, you can create an exceptionally fast Single-page Application and connect it with other back-ends. Furthermore, it also offers support for Server-side Rendering (SSR).</p>
+                        </div>
                     </div>
                 </div>
+                <div id="hst" class="pb-8"></div>
                 <div class="flex flex-col shadow-lg m-[5pc]  pb-[15px] pt-[15px] pb-[50px] rounded-md">
-                    <p id="hst" class="mx-auto text-3xl">History</p>
+                    <p class="mx-auto text-3xl">History</p>
                     <p class="mx-auto text-xl text-center mt-10 p-5 ">Tim Berners-Lee created the World Wide Web while employed at CERN in 1989. He suggested a "universal linked information system" utilizing various concepts and technologies, the essential of which was the relationships that existed among information. He constructed the first web server, the first web browser, and a document formatting standard known as Hypertext Markup Language (HTML). Following the publication of the markup language in 1991, and the release of the browser source code for public access in 1993, numerous other web browsers were quickly developed, with Marc Andreessen's Mosaic, being especially user-friendly and simple to install, and frequently recognized for initiating the Internet boom of the 1990s. It was a graphical browser that operated on several widely used office and home computers, delivering multimedia content to non-technical users by incorporating images and text on one page.</p>
                     <img class="p-5" src="https://www.w3.org/cms-uploads/w3c10-timeline.png" alt="">
                     <p class="text-xl text-center mt-10">
                         In conclusion, websites play an essential role in modern communication, commerce, and entertainment. 
                         Understanding HTML, CSS, and JavaScript is fundamental to creating effective and engaging web experiences.
                      </p>
-                     
+                      
                 </div>
+                <div class="flex flex-row pb-[100px]">
+                    <div class="mx-auto space-x-6 fa-2xl relative">
+                        <a href="https://www.instagram.com/reysabiormdn?igsh=MTZ0aXphdmw0MGwxNw==" class="group relative">
+                            <i class="fa-brands fa-instagram hover:shadow-[0_0_15px_rgba(255,255,255,1)] hover:text-blue-500 transition duration-300"></i>
+                            <span class="absolute left-1/2 -translate-x-1/2 -bottom-8 text-black text-sm opacity-0 group-hover:opacity-100 transition duration-300">
+                                Instagram
+                            </span>
+                        </a>
+                        <a href="https://wa.me/qr/KYFKU2TAHPLAJ1" class="group relative">
+                            <i class="fa-brands fa-whatsapp hover:shadow-[0_0_15px_rgba(255,255,255,1)] hover:text-blue-500 transition duration-300"></i>
+                            <span class="absolute left-1/2 -translate-x-1/2 -bottom-8 text-black text-sm opacity-0 group-hover:opacity-100 transition duration-300">
+                                WhatsApp
+                            </span>
+                        </a>
+                        <a href="https://github.com/reysabiormdn" class="group relative">
+                            <i class="fa-brands fa-github hover:shadow-[0_0_15px_rgba(255,255,255,1)] hover:text-blue-500 transition duration-300"></i>
+                            <span class="absolute left-1/2 -translate-x-1/2 -bottom-8 text-black text-sm opacity-0 group-hover:opacity-100 transition duration-300">
+                                GitHub
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                
             </div>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const frameworkCards = document.querySelectorAll(".shadow-lg.p-5.rounded-md");
+            frameworkCards.forEach((card) => {
+                card.style.opacity = 0;
+                card.style.transform = "translateY(100px) scale(0.8) rotateY(30deg)";
+            });
+
+            function animateFrameworks() {
+                frameworkCards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                const screenPosition = window.innerHeight / 1.2;
+
+                if (rect.top < screenPosition && rect.bottom > 0) {
+                    card.style.transition = `all 0.8s ease-out ${index * 0.2}s`;
+                    card.style.opacity = 1;
+                    card.style.transform = "translateY(0) scale(1) rotateY(0)";
+                    card.style.boxShadow = "0 8px 30px rgba(0, 0, 0, 0.2)";
+                } else {
+                    card.style.transition = "all 0.6s ease-out";
+                    card.style.opacity = 0;
+                    card.style.transform = "translateY(100px) scale(0.8) rotateY(30deg)";
+                    card.style.boxShadow = "none";
+                }
+                });
+            }
+
+            window.addEventListener("scroll", animateFrameworks);
+            animateFrameworks(); 
+            });
+            </script>
+            <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const links = document.querySelectorAll("a[href^='#']");
+
+                links.forEach(link => {
+                    link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").slice(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const targetPosition = targetElement.offsetTop;
+                        const startPosition = window.scrollY;
+                        const distance = targetPosition - startPosition;
+                        const duration = 1000; // Adjust this value to control the speed (in milliseconds)
+                        let startTime = null;
+
+                        function animation(currentTime) {
+                        if (startTime === null) startTime = currentTime;
+                        const timeElapsed = currentTime - startTime;
+                        const run = ease(timeElapsed, startPosition, distance, duration);
+                        window.scrollTo(0, run);
+                        if (timeElapsed < duration) requestAnimationFrame(animation);
+                        }
+
+                        function ease(t, b, c, d) {
+                        t /= d / 2;
+                        if (t < 1) return c / 2 * t * t + b;
+                        t--;
+                        return -c / 2 * (t * (t - 2) - 1) + b;
+                        }
+
+                        requestAnimationFrame(animation);
+                    }
+                    });
+                });
+                });
+          </script>
     </div>
   </body>
 </html>
